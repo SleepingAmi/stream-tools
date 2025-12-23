@@ -1,0 +1,13 @@
+:root {
+    --bg-image: url("https://sleepingami.dpdns.org/stream-tools/shared/bg.png")
+    --primary: #00fff0;
+    --accent: #ff0055;
+    --font-scale: 1;
+}
+
+@keyframes glitch-cycle {
+    0%, 88% { transform: none; }
+    90% { transform: translate(-3px, 2px); }
+    92% { transform: translate(3px, -2px); }
+    94%, 99% { transform: none; }
+}
