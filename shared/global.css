@@ -1,5 +1,5 @@
 :root {
-    --bg-image: url("https://sleepingami.dpdns.org/stream-tools/shared/bg.png")
+    --bg-image: url("https://sleepingami.dpdns.org/stream-tools/shared/bg.png");
     --primary: #00fff0;
     --accent: #ff0055;
     --font-scale: 1;
@@ -9,5 +9,6 @@
     0%, 88% { transform: none; }
     90% { transform: translate(-3px, 2px); }
     92% { transform: translate(3px, -2px); }
-    94%, 99% { transform: none; }
+    94% { transform: translate(-2px, 3px); }
+    99% { transform: none; }
 }
