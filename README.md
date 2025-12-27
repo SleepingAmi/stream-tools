@@ -8,10 +8,10 @@ Side note, [donations](https://sleepingami.dpdns.org/donate) are greatly appreci
 
 Licensed under the MIT License.
 
-## What can be found here?
+## What can be found here? <!--     Yes. The original commit (https://github.com/SleepingAmi/stream-tools/commit/4da635eb94b1f35319673067108cdecf04eb70e1) was rushed.     -->
 This is the source code of [SleepingAmi/stream-tools](https://sleepingami.dpdns.org/stream-tools)
 
-It contains useable, nAderallTwo themed screens for streaming:
+It contains reuseable, nAderallTwo themed screens for streaming:
 - [stream-tools/starting-soon](https://sleepingami.dpdns.org/stream-tools/starting-soon): A simple, animated, customiseable "Stream Starting Soon" screen
 - [stream-tools/brb](https://sleepingami.dpdns.org/stream-tools/brb): A simple, animated, customiseable "Be Right Back" screen
 - [stream-tools/technical](https://sleepingami.dpdns.org/stream-tools/technical): A simple, animated, customiseable "Technical Difficulties" screen
