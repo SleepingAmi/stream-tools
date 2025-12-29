@@ -1,17 +1,132 @@
 # stream-tools
-FOSS Stream Tools (Screens) - modular web screens
 
-## OwO What's This?
-I started streaming. I needed some screens (Starting Soon, BRB Toast, Technical Difficulties, etcetera). OBS can capture a web source with GPU acceleration, and show it full screen. Made this repository, hosted on [GitHub Pages](https://pages.github.com), and made it FOSS for any streamers who want their own, fully customiseable screens for their streams, free.
+A small collection of stream screens implemented as plain HTML, CSS, and minimal JavaScript.
 
-Side note, [donations](https://sleepingami.dpdns.org/donate) are greatly appreciated, and completely optional. If you use this repo or appreciate the detail, donations help.
+stream-tools exists to make common stream intermissions boring, predictable, and self-hostable. No build step, no frameworks, no accounts, no tracking. Just static files rendered by the browser.
 
-Licensed under the MIT License.
+The intended deployment target is GitHub Pages (or any other static host). The intended consumer is software that can display a web page, such as OBS via a Browser Source.
 
-## What can be found here? <!--     Yes. The original commit (https://github.com/SleepingAmi/stream-tools/commit/4da635eb94b1f35319673067108cdecf04eb70e1) was rushed.     -->
-This is the source code of [SleepingAmi/stream-tools](https://sleepingami.dpdns.org/stream-tools)
 
-It contains reuseable, nAderallTwo themed screens for streaming:
-- [stream-tools/starting-soon](https://sleepingami.dpdns.org/stream-tools/starting-soon): A simple, animated, customiseable "Stream Starting Soon" screen
-- [stream-tools/brb](https://sleepingami.dpdns.org/stream-tools/brb): A simple, animated, customiseable "Be Right Back" screen
-- [stream-tools/technical](https://sleepingami.dpdns.org/stream-tools/technical): A simple, animated, customiseable "Technical Difficulties" screen
+---
+
+### What this is
+- "Starting Soon", "Be Right Back", "Ending", and similar stream screens
+- Implemented using vanilla HTML/CSS/JS
+- Served as static pages
+- Designed to be embedded, not interacted with
+
+### What this is not
+- A streaming platform
+- A SaaS product
+- A widget marketplace
+- A real-time overlay system
+- A framework
+
+---
+
+### Why
+
+Most stream intermission screens are either:
+- Locked behind proprietary tools
+- Locked behind paywalls
+- Animated via heavyweight runtimes
+- Impossible to self-host cleanly
+
+stream-tools takes the opposite approach: static assets, minimal logic, and full user control.
+
+If you can host a website, you can run this.
+
+---
+
+## Usage
+
+### 1. Fork or clone
+
+Fork this repository, or clone it locally if you plan to customize.
+
+git clone https://github.com/SleepingAmi/stream-tools.git
+
+### 2. Enable hosting
+
+Enable GitHub Pages (or equivalent) and point it at the repository root.
+
+Once enabled, each screen will be accessible as a normal URL, usually at your-username.github.io/stream-tools.
+
+### 3. Add to OBS
+
+In OBS:
+
+1. Add a Browser Source
+2. Set the URL to the page you want (e.g. stream-tools/starting-soon)
+3. Set width/height to your canvas resolution
+4. Enable cache refreshing or similar, if applicable (sometimes animation are cached and break the layout)
+
+No local files are required on the streaming machine, unless you rawdog "From source file" in OBS.
+
+---
+
+## Customisation
+
+Customisation is expected.
+
+Each screen is intentionally simple:
+- Text can be changed directly in HTML
+- Colours, fonts, and layout live in CSS
+- Animations (where present) are implemented in plain CSS
+- Timers (where present) are implemented in plain JS
+
+There is no configuration system. Edit the files.
+
+If you are comfortable with web basics, nothing here should be surprising.
+
+---
+
+## Screens
+
+Available screens typically include:
+- Starting Soon
+- Be Right Back
+- Ending
+- Technical Difficulties
+
+<!-- Exact filenames and features are documented inline in each screen's directory. -->
+
+Screens are independent. You can delete the ones you do not need.
+
+---
+
+## Browser compatibility
+
+Targets modern Chromium-based browsers, as used by OBS Browser Source.
+
+No attempt is made to support legacy browsers.
+
+---
+
+## Contributing
+
+Contributions are welcome, provided they follow the project's constraints:
+- No external frameworks
+- No build tooling
+- No trackers, analytics, or third-party calls
+- Keep it static
+- Keep it readable
+
+New screens, refinements, and bug fixes are all acceptable.
+
+If a change increases complexity without a clear benefit, it will likely be rejected.
+
+---
+
+## License
+
+Licensed under the [MIT License](https://mit-license.org/).
+
+
+---
+
+## Notes
+
+If you are looking for something dynamic, managed, or interactive, this project is probably not what you want.
+
+This is a free product that happens to be implemented as static files.
